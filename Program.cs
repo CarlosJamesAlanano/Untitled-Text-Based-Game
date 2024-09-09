@@ -28,6 +28,7 @@ namespace app
             EndScene();
         }
 
+        /// Check for "exit" input
         static void CheckForExit(string input)
         {
             if (input.Equals("EXIT", StringComparison.OrdinalIgnoreCase))
