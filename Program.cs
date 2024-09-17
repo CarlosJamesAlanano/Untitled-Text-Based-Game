@@ -19,13 +19,23 @@ namespace app
 
         static void Main(string[] args)
         {
-            IntroScene();
+            Console.WriteLine("Welcome to Before The Candle Melts");
+            Console.WriteLine("1. Enter\n2. Exit");
+            Console.Write(":");
+            var menu = Console.ReadLine();
+            if(menu=="1"){
+                IntroScene();
             while (candleTime > 0)
             {
                 FirstInteraction();
                 if (candleTime <= 0) break;
+                EndScene();
             }
-            EndScene();
+            }
+            else {
+                return;
+            }
+            
         }
 
         /// Check for "exit" input
