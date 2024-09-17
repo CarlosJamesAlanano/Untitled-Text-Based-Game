@@ -6,7 +6,7 @@ namespace app
     class Program
     {
         // Character names
-        private const string MainCharacter = "Zed";
+        private static string MainCharacter;
         private const string Companion = "Shane";
 
         // Story variables
@@ -24,6 +24,8 @@ namespace app
             Console.Write(":");
             var menu = Console.ReadLine();
             if(menu=="1"){
+                Console.Write("Enter your desired name: ");
+                MainCharacter = Console.ReadLine();
                 IntroScene();
             while (candleTime > 0)
             {
@@ -32,10 +34,13 @@ namespace app
                 EndScene();
             }
             }
-            else {
-                return;
+            else if (menu == "2"){
+                Console.WriteLine("Alright, bye!");
+                Environment.Exit(0);
             }
-            
+            else {
+                Console.WriteLine("You made a bad decision");
+            }
         }
 
         /// Check for "exit" input
