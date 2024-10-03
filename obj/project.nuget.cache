@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "FUgl2JLJAZs=",
+  "dgSpecHash": "6Z3qw2/Dj6oDT2hak44Vz3XLLeyIwlXo2T6saoOhPwanIsxviQclzsfkiT/RvVFYyCn9oLarnrsrbUq1ccPopQ==",
   "success": true,
-  "projectFilePath": "/home/zeta/Documents/txtbased/txtbased.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/zeta/Documents/Projects/Untitled-Text-Based-Game/txtbased.csproj",
+  "expectedPackageFiles": [
+    "/home/zeta/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.8/microsoft.aspnetcore.app.ref.8.0.8.nupkg.sha512"
+  ],
   "logs": []
 }
